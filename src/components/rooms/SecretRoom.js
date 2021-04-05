@@ -1,9 +1,12 @@
 import SecretOpenButton from '../buttons/SecretOpenButton'
 
-export default function SecretRoom() {
+export default function SecretRoom({ openSesame }) {
   return (
     <div>
-      <SecretOpenButton backupPassword="easter05042021" />
+      <SecretOpenButton
+        openSesame={openSesame}
+        backupPassword="easter05042021"
+      />
     </div>
   )
 }
